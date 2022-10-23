@@ -16,3 +16,19 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Definimos margin e padding 0 para todos os elementos do HTML. */ 
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* 
+    Para selecionarmos uma class no CSS usamos o ponto seguido do nome da classe (.nome_da_classe {}. Como queremos inserir uma imagem de fundo, usamos o seletor de classe da seção principal e chamamos o atributo background-image. Para iserirmos o diretório da imagem, usamos url(). 
+*/
+
+.container {
+    height: 100vh; /* A unidade vh significa viewport e se refere a altura. Isso significa que vai ser utilizado o tamanho total do viewport (tamanho do nosso dispositivo), ou seja, uma altura de 100bh corresponde a 100% da página total, do nosso corpo do documento (body) */
+}
