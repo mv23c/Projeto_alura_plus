@@ -32,3 +32,11 @@ body {
 .container {
     height: 100vh; /* A unidade vh significa viewport e se refere a altura. Isso significa que vai ser utilizado o tamanho total do viewport (tamanho do nosso dispositivo), ou seja, uma altura de 100bh corresponde a 100% da página total, do nosso corpo do documento (body) */
 }
+
+.container__botao {
+    background-color: var(--botao-azul); /* cor de fundo do botão */
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+}
