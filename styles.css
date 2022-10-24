@@ -5,11 +5,15 @@ Podemos usar o :root para declarar variáveis CSS globais. */
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
 }
 
 body {
     background-color: var(--cor-de-fundo); /* cor de fundo. */
     color: var(--branco-principal); /* Define a cor do texto de um elemento. */
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 * { /* É um seletor utilizado para estilizar todos os elementos do HTML. */
@@ -31,12 +35,39 @@ body {
 
 .container {
     height: 100vh; /* A unidade vh significa viewport e se refere a altura. Isso significa que vai ser utilizado o tamanho total do viewport (tamanho do nosso dispositivo), ou seja, uma altura de 100bh corresponde a 100% da página total, do nosso corpo do documento (body) */
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .container__botao {
     background-color: var(--botao-azul); /* cor de fundo do botão */
     border-radius: 5px;
-    padding: 1em;
+    padding: 1em; /* O padding define uma distância entre o conteúdo e as bordas. */
     color: var(--branco-principal);
     display: block;
+    text-decoration: none;
+    margin-bottom: 1em; /* margem de baixo (bottom) */
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /* topo lado_direito fundo lado_esquerdo */
+}
+
+.container__caixa {
+    margin: 0 6em; /* topo e fundo */
 }
