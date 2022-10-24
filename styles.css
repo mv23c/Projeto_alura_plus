@@ -6,6 +6,7 @@ Podemos usar o :root para declarar variáveis CSS globais. */
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
 }
 
 body {
@@ -163,3 +164,16 @@ body {
     margin-bottom: 5em;
 }
 */
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: red;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
