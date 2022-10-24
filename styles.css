@@ -1,5 +1,3 @@
-/*:root seleciona o elemento raiz do documento: <html> no caso do HTML. 
-Podemos usar o :root para declarar variáveis CSS globais. */
 :root {
     --branco-principal: #FFFFFF ;
     --cinza-secundario: #C0C0C0;
@@ -10,46 +8,40 @@ Podemos usar o :root para declarar variáveis CSS globais. */
 }
 
 body {
-    background-color: var(--cor-de-fundo); /* cor de fundo. */
-    color: var(--branco-principal); /* Define a cor do texto de um elemento. */
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
 }
 
-* { /* É um seletor utilizado para estilizar todos os elementos do HTML. */
+* {
     margin: 0;
     padding: 0;
 }
-
-/* Definimos margin e padding 0 para todos os elementos do HTML. */ 
 
 .principal {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
-    text-align: center; /* alinha ao centro tudo que está dentro de um elemento de bloco */
+    text-align: center;
 }
 
-/* 
-    Para selecionarmos uma class no CSS usamos o ponto seguido do nome da classe (.nome_da_classe {}. Como queremos inserir uma imagem de fundo, usamos o seletor de classe da seção principal e chamamos o atributo background-image. Para iserirmos o diretório da imagem, usamos url(). 
-*/
-
 .container {
-    height: 100vh; /* A unidade vh significa viewport e se refere a altura. Isso significa que vai ser utilizado o tamanho total do viewport (tamanho do nosso dispositivo), ou seja, uma altura de 100bh corresponde a 100% da página total, do nosso corpo do documento (body) */
+    height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
 .container__botao {
-    background-color: var(--botao-azul); /* cor de fundo do botão */
+    background-color: var(--botao-azul);
     border-radius: 5px;
-    padding: 1em; /* O padding define uma distância entre o conteúdo e as bordas. */
+    padding: 1em;
     color: var(--branco-principal);
     display: block;
     text-decoration: none;
-    margin-bottom: 1em; /* margem de baixo (bottom) */
+    margin-bottom: 1em;
 }
 
 .botao_secundario {
@@ -68,11 +60,11 @@ body {
 }
 
 .container__imagem {
-    margin: 1em 0 2em 0; /* topo lado_direito fundo lado_esquerdo */
+    margin: 1em 0 2em 0;
 }
 
 .container__caixa {
-    margin: 0 6em; /* topo e fundo */
+    margin: 0 6em;
 }
 
 .secundario__imagem {
@@ -126,9 +118,7 @@ body {
 }
 
 .rodape {
-    /*align-items: center;*/
     text-align: center;
-    /*justify-content: center;*/
     margin: 5em 3em;
 }
 
@@ -136,14 +126,9 @@ body {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    /*margin:2em 0;*/
     margin-top: 1em;
 }
-/*
-.lista__link {
-    margin: 0 0.5em;
-}
-*/
+
 .lista__link a {
     text-decoration: none;
     color: var(--branco-principal);
@@ -152,18 +137,9 @@ body {
 
 .rodape__texto {
     font-size: 14px;
-    /*margin-bottom: 2em;*/
     color: var(--cinza-secundario);
     margin: 1em 0;
 }
-
-/*
-.p_segundo {
-    margin-left: 10em;
-    margin-right: 10em;
-    margin-bottom: 5em;
-}
-*/
 
 .lista__link a:hover {
     color: var(--botao-azul);
